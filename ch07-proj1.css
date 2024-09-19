@@ -55,34 +55,58 @@ button {
 
 
 /* add your styles here */
-header {
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.card {
+.card{
     width: 24%;
-}
-
-.cards{
-    display: flex;
-    justify-content: space-between;
 }
 
 .container{
     display: flex;
-    
-  
+    justify-content: center;
+    align-items: center;
 }
 
-.thumbnail{
-    max-width: 100%;
+.cards {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card img {
+    max-width: 100%; 
+}
+
+.card img:hover {
+    filter: saturate(150%)
+}
+
+.card button {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.card:hover button {
+    opacity: 1;
 }
 
 
 
 /* styles for mobile protrait screen */
-
+@media only screen and (max-device-width: 480px){
+    .card {
+        width: 100%;
+    }
+}
 
 /* styles for tablet portrait and mobile landscape screens */
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .card {
+        width: 45%;
+    }
+}
