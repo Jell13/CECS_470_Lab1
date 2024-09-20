@@ -99,6 +99,11 @@ header{
 
 /* styles for mobile protrait screen */
 @media only screen and (max-device-width: 480px){
+    :root{
+        --card-font-size: 100%;
+        --header-font-size: 24px;
+        --header-height: 4em;
+    }
     .card {
         width: 100%;
     }
@@ -106,6 +111,10 @@ header{
 
 /* styles for tablet portrait and mobile landscape screens */
 @media only screen and (min-width: 481px) and (max-width: 768px){
+    :root{
+        --card-font-size: 100%;
+        --header-height: 5em;
+    }
     .card {
         width: 45%;
     }
